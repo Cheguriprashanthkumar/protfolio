@@ -1,0 +1,72 @@
+h1{
+    margin:5px;
+    border:5px;
+    padding:10px;
+    text-align: center;
+}
+/* General styling */
+#live-text {
+    font-size: 2.5em;
+}
+
+/* Colors for the changing text */
+.highlight {
+    color: #3498db; /* Initial color for "Prashanth Kumar" */
+    transition: color 0.5s ease-in-out;
+}
+
+.highlight.software-developer {
+    color: #e74c3c; /* Color for "Software Developer" */
+}
+h3{
+    text-align: center;
+    padding-bottom:0px;
+}
+.col{
+    text-align: left;
+    margin-bottom:50px;
+    margin-top:50px;
+    container:inherit;
+
+}
+h5{
+    position: relative;
+    top: 125px;    /* Moves the element 20px down from its original position */
+    left: -20px;   /* Moves the element 10px to the right from its original position */
+    font-style: italic;
+}
+h6{
+    position:relative;
+    top:200px;
+    }
+h6 a{
+    text-decoration:none;
+    
+}
+h6 a:onhover{
+    color:red;
+}
+#down {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #333; /* Default color for the icons */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Change this color on hover */
+}
+h6:onhover{
+ 
+    color: red;
+    
+}
+.down{
+   
+}

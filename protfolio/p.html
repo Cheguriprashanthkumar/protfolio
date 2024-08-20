@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Text Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        #live-text {
+            font-size: 2.5em;
+            color: #3498db; /* Initial color */
+            transition: color 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="live-text">I am Cheguri Prashanth Kumar</h1>
+    </div>
+
+    <script>
+        const liveText = document.getElementById('live-text');
+
+        const texts = [
+            'I am a Software Developer',
+            'I am Cheguri Prashanth Kumar'
+        ];
+
+        const colors = [
+            '#e74c3c',  // Color for "I am a Software Developer"
+            '#3498db'   // Color for "I am Cheguri Prashanth Kumar"
+        ];
+
+        let index = 0;
+
+        setInterval(() => {
+            // Toggle between the texts
+            index = (index + 1) % texts.length;
+
+            // Update the text
+            liveText.textContent = texts[index];
+
+            // Update the color
+            liveText.style.color = colors[index];
+        }, 3000); // Change text every 3 seconds
+    </script>
+</body>
+</html>
